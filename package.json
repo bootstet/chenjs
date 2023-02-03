@@ -1,0 +1,54 @@
+{
+  "name": "chenjs",
+  "version": "1.0.0",
+  "description": "公用方法库",
+  "scripts": {
+    "build": "father-build"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bootstet/chenjs.git"
+  },
+  "keywords": [
+    "公用方法"
+  ],
+  "author": "bootstet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bootstet/chenjs/issues"
+  },
+  "homepage": "https://github.com/bootstet/chenjs#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.18.9",
+    "@types/lodash.clonedeep": "^4.5.6",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.difference": "^4.5.0",
+    "nanoid": "^3.1.30",
+    "qs": "^6.10.1"
+  },
+  "devDependencies": {
+    "@types/lodash.difference": "^4.5.7",
+    "@types/qs": "^6.9.7",
+    "@umijs/test": "^3.0.5",
+    "dumi": "^1.0.17",
+    "father-build": "^1.17.2",
+    "gh-pages": "^3.0.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
+    "yorkie": "^2.0.0"
+  }
+}
