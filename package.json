@@ -2,8 +2,7 @@
   "name": "chenjs",
   "version": "1.0.0",
   "description": "公用方法库",
-  "scripts": {
-  },
+  "scripts": {},
   "main": "src/index.js",
   "keywords": [
     "公用方法"
@@ -13,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/bootstet/chenjs/issues"
   },
-  "homepage": "https://github.com/bootstet/chenjs#readme"
+  "homepage": "https://github.com/bootstet/chenjs#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
